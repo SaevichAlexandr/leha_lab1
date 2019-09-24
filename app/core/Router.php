@@ -1,46 +1,36 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Alex
- * Date: 07.03.2019
- * Time: 13:22
- */
-
-include_once ("routes/Routes.php");
 
 class Router
 {
-    static $validRoutes = [];
-
-//    public static function getRoutes($validRoute, $method)
-//    {
-//        self::$validRoutes[] = [$validRoute, $method];
-//    }
-
-    public function start($url)
+    function route()
     {
-        echo $_SERVER['REQUEST_URI'];
-
-        $uri = $_SERVER['REQUEST_URI'];
-
-        if ($uri != '/') {
-
+        //Получаем имя контроллера или "page" по умолчанию
+        $controller_name = $_REQUEST["controller"];
+        //Получаем имя экшена или "index" по умолчанию
+        $action_name = $_REQUEST['action'];
+        //Путь и имя файла контроллера
+        $controller_file = "app/controllers/".$controller_name.'controller.php';
+        //Проверяем наличие файла контроллера и завершаем работу в случае его отсут-ствия
+        if(file_exists($controller_file)){
+            include_once $controller_file;
+        } elseif ($controller_name == null) {
+            include_once "app/controllers/MainController.php";
+            $controller = new MainController();
+            $controller->generateView();
+        } else {
+            echo "ОШИБКА! Файл контроллера $controller_file не найден!";
+            die;
         }
-//        $routeIsFound = false;
-//
-//        if ($url == "") {
-//            include_once ("app/views/main.php");
-//        } else {
-//            foreach (self::$validRoutes as $validRoute)
-//            {
-//                if ($validRoute[0] == $url) {
-//                    $validRoute[1]->__invoke();
-//                    $routeIsFound = true;
-//                }
-//            }
-//            if ($routeIsFound == false) {
-//                include_once ("app/views/404.php");
-//            }
-//        }
+        //Создаем экземпляр контроллера
+        $controller_class_name = ucfirst($controller_name).'Controller';
+        $controller = new $controller_class_name;
+
+//        Вызываем экшн конроллера
+        if(method_exists($controller, $action_name)) {
+            $controller->$action_name();
+        } else {
+            echo "ОШИБКА! Отсутствует метод $action_name контроллера $controller_class_name";
+            die;
+        }
     }
 }

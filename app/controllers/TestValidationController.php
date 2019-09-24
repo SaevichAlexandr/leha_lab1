@@ -9,13 +9,13 @@
 class TestValidationController extends FormValidationController
 {
 
-    static function isNotEmpty($data)
+    public function isNotEmpty()
     {
-        if ($data['fio'] == "") {
+        if ($_POST['fio'] == "") {
             return false;
-        } elseif ($data['electricity'] == "") {
+        } elseif ($_POST['electricity'] == "") {
             return false;
-        } elseif ($data['electricity2'] == "") {
+        } elseif ($_POST['electricity2'] == "") {
             return false;
         } else {
             return true;
@@ -26,14 +26,14 @@ class TestValidationController extends FormValidationController
     {
         echo "<h1>Информация</h1>";
         echo "<h3>";
-        if (!self::isNotEmpty($_POST)) {
+        if (!$this->isNotEmpty($_POST)) {
             echo "Введены не все данные!";
-        } elseif (!self::isFIO($_POST)) {
+        } elseif (!$this->isFIO($_POST)) {
             echo "ФИО введено некорректно!";
         } else {
             echo "Тест пройден верно!";
         }
         echo "</h3>";
-
+//        var_dump($_POST);
     }
 }

@@ -1,7 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dcbadfe6-a2c6-4a6a-893b-0a19d0c128b6" name="Default" comment="" />
+    <list default="true" id="dcbadfe6-a2c6-4a6a-893b-0a19d0c128b6" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/AboutController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/AboutController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/ContactController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/ContactController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/FormValidationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/FormValidationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/InterestsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/InterestsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/MainController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/PhotoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/PhotoController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/StudyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/StudyController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/TestController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/TestController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/TestValidationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/TestValidationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/core/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/core/Controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/core/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/core/Router.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/about.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/about.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/contact.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/interests.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/interests.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/photos.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/photos.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/study.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/study.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/test.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/test.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/Routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/Routes.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,14 +38,19 @@
       <executable />
     </execution>
   </component>
-  <component name="PhpWorkspaceProjectConfiguration">
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/squizlabs/php_codesniffer" />
       <path value="$PROJECT_DIR$/vendor/composer" />
     </include_path>
   </component>
   <component name="ProjectId" id="1RIS1OEiPvT74P9OWWpRDgpsEWE" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../PC_Master_Race_Shop" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -64,11 +93,22 @@
       <workItem from="1559349654684" duration="6399000" />
       <workItem from="1560096760968" duration="279000" />
       <workItem from="1569352902617" duration="259000" />
-      <workItem from="1569353450122" duration="462000" />
+      <workItem from="1569353450122" duration="6538000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

@@ -22,18 +22,18 @@
 
         <div id="navigation">
             <ul>
-                <li><a href="main">Главная</a></li>
+                <li><a href="?controller=main&action=generateview">Главная</a></li>
                 <li><a href="#">Автор</a>
                     <ul class="dropdawn">
-                        <li><a href="about">Обо мне</a></li>
-                        <li><a href="interests">Мои интересы</a></li>
-                        <li><a href="photos">Фотоальбом</a></li>
-                        <li><a href="contact">Контакт</a></li>
-                        <li><a href="study">Учёба</a></li>
+                        <li><a href="?controller=about&action=generateview">Обо мне</a></li>
+                        <li><a href="?controller=interests&action=generateview">Мои интересы</a></li>
+                        <li><a href="?controller=photo&action=generateview">Фотоальбом</a></li>
+                        <li><a href="?controller=contact&action=generateview">Контакт</a></li>
+                        <li><a href="?controller=study&action=generateview">Учёба</a></li>
 
                     </ul>
                 </li>
-                <li><a href="test">Тест</a></li>
+                <li><a href="?controller=test&action=generateview">Тест</a></li>
             </ul>
         </div>
 
@@ -45,59 +45,7 @@
             <ul>
                 <li><a href="#My_interests">Якорь 1</a></li>
                 <li><a href="#Top_music">Якорь 2</a></li>
-<!--            </ul>-->
-<!--        </div>-->
-<!--        <div id="text_2">-->
-<!--           <script>-->
-<!--    var film_arr = ["Фильм 1", "Фильм 2", "Фильм 3", "Фильм 4", "Фильм 5", "Фильм 6", "Фильм 7"];        -->
-<!--    var book_arr = ['Книга 1', "Книга 2", "Книга 3", "Книга 4", "Книга 5", "Книга 6", "Книга 7"]; -->
-<!--    var lang_arr = ["Javascript", "PHP", "<s>HTML</s>", "C++", "C#",]; -->
-<!--</script>-->
-<!--     <p class="caption_2"><a name="book">Любимые книги</a></p>-->
-<!--<ul>    -->
-<!--    <script>-->
-<!--        var i = 0;-->
-<!--        while (i < book_arr.length)-->
-<!--        {-->
-<!--            document.write('<li>');-->
-<!--            document.write(book_arr[i]);-->
-<!--            document.write("</li>");-->
-<!--            i++;-->
-<!--        }-->
-<!--    </script> -->
-<!--</ul>-->
-<!--            <p class="caption_2"><a name="films">Любимые фильмы</a></p>-->
-<!--                <ul>    -->
-<!--                    <script>-->
-<!--                        var i = 0;-->
-<!--                        while (i < film_arr.length)-->
-<!--                        {-->
-<!--                            document.write('<li>');-->
-<!--                            document.write(film_arr[i]);-->
-<!--                            document.write("</li>");-->
-<!--                            i++;-->
-<!--                        }-->
-<!--                    </script> -->
-<!--                </ul>-->
-<!--            <p class="caption_2"><a  name="lang">Любимые языки программирования</a></p>-->
-<!--                <ul>    -->
-<!--                    <script>-->
-<!--                        var i = 0;-->
-<!--                        while (i < lang_arr.length)-->
-<!--                        {-->
-<!--                            document.write('<li>');-->
-<!--                            document.write(lang_arr[i]);-->
-<!--                            document.write("</li>");-->
-<!--                            i++;-->
-<!--                        }-->
-<!--                    </script>           -->
-<!--                </ul>-->
-<!---->
-<!--        </div>-->
-<!--        </div>-->
-<!--        -->
-<!--    </div>-->
-<!--    -->
+
         <br><br><br>
         <div id="My_interests">
             <h1>Мои интересы</h1>

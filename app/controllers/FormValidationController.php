@@ -8,17 +8,17 @@
 
 class FormValidationController
 {
-    static function isNotEmpty($data)
+    public function isNotEmpty()
     {
-        if ($data['fio'] == "") {
+        if ($_POST['fio'] == "") {
             return false;
-        } elseif ($data['phone'] == "") {
+        } elseif ($_POST['phone'] == "") {
             return false;
-        } elseif ($data['sex'] == "") {
+        } elseif ($_POST['sex'] == "") {
             return false;
-        } elseif ($data['age'] == "") {
+        } elseif ($_POST['age'] == "") {
             return false;
-        } elseif ($data['email'] == "") {
+        } elseif ($_POST['email'] == "") {
             return false;
         } else {
             return true;
@@ -26,58 +26,58 @@ class FormValidationController
 
     }
 
-    static function isPhoneNumber($data)
+    public function isPhoneNumber()
     {
         $regexp = "/[+]{1}[0-9]{11}/";
-        if (preg_match($regexp, $data['phone'], $match)) {
+        if (preg_match($regexp, $_POST['phone'], $match)) {
             return true;
         } else {
             return false;
         }
     }
 
-    static function isAge($data)
+    public function isAge()
     {
-        if ($data['age'] > 0 && $data['age'] < 126) {
+        if ($_POST['age'] > 0 && $_POST['age'] < 126) {
             return true;
         } else {
             return false;
         }
     }
 
-    static function isEmail($data)
+    public function isEmail()
     {
         $regexp = "/[a-z]+[@]{1}[a-z]+[.]{1}[a-z]+/";
-        if (preg_match($regexp, $data['email'], $match)) {
+        if (preg_match($regexp, $_POST['email'], $match)) {
             return true;
         } else {
             return false;
         }
     }
 
-    static function isFIO($data)
+    public function isFIO()
     {
         $regexp = "/[а-яё]+\s[а-яё]+\s[а-яё]+/ui";
-        if (preg_match($regexp, $data['fio'], $match)) {
+        if (preg_match($regexp, $_POST['fio'], $match)) {
             return true;
         } else {
             return false;
         }
     }
 
-    function validate()
+    public function validate()
     {
         echo "<h1>Информация</h1>";
         echo "<h3>";
-        if (!self::isNotEmpty($_POST)) {
+        if (!$this->isNotEmpty()) {
             echo "Введены не все данные!";
-        } elseif (!self::isFIO($_POST)) {
+        } elseif (!$this->isFIO()) {
             echo "Неверный ввод ФИО!";
-        } elseif (!self::isPhoneNumber($_POST)) {
+        } elseif (!$this->isPhoneNumber()) {
             echo "Неверный ввод номера телефона!";
-        } elseif (!self::isAge($_POST)) {
+        } elseif (!$this->isAge()) {
             echo "Введён неверный возраст!";
-        } elseif (!self::isEmail($_POST)) {
+        } elseif (!$this->isEmail()) {
             echo "Введён неверный E-mail!";
         } else {
             echo "Данные введены верно.";

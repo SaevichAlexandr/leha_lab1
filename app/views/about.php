@@ -19,18 +19,18 @@
     </div> 
         <div id="navigation">
             <ul>
-                <li><a href="main">Главная</a></li>
+                <li><a href="?controller=main&action=generateview">Главная</a></li>
                 <li><a href="#">Автор</a>
                      <ul class="dropdawn">
-                        <li><a href="about">Обо мне</a></li>
-                        <li><a href="interests">Мои интересы</a></li>
-                        <li><a href="photos">Фотоальбом</a></li>
-                        <li><a href="contact">Контакт</a></li>
-                        <li><a href="study">Учёба</a></li>
+                        <li><a href="?controller=about&action=generateview">Обо мне</a></li>
+                        <li><a href="?controller=interests&action=generateview">Мои интересы</a></li>
+                        <li><a href="?controller=photo&action=generateview">Фотоальбом</a></li>
+                        <li><a href="?controller=contact&action=generateview">Контакт</a></li>
+                        <li><a href="?controller=study&action=generateview">Учёба</a></li>
                         
                     </ul>
                 </li>   
-                <li><a href="test">Тест</a></li>
+                <li><a href="?controller=test&action=generateview">Тест</a></li>
             </ul>
         </div>
         
